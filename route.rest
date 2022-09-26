@@ -1,12 +1,12 @@
 
 // Wiki-API articles
 //get request
-GET http://localhost:3000/articles
+GET http://localhost:3000/v1/articles
 
 ###
 
 //post request
-POST http://localhost:3000/articles
+POST http://localhost:3000/v1/articles
 // Content-Type: application/json
 // {
 //    title: "Postman article title post test",
@@ -20,31 +20,31 @@ title=Postman article title post test
 ###
 
 //delete request
-DELETE http://localhost:3000/articles
+DELETE http://localhost:3000/v1/articles
 
 ###
 
 //Specific Wiki-API article
 //get request
-GET http://localhost:3000/articles/Postman%20article%20title%20post%20test
+GET http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
 
 ###
 
 //put request (replace)
-PUT http://localhost:3000/articles/Postman%20article%20title%20post%20test
+PUT http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
 Content-Type: application/x-www-form-urlencoded
 
 content=Replace a new docoment to the collection without title.
 
 ###
 
-PATCH http://localhost:3000/articles/Postman%20article%20title%20post%20test
+PATCH http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
 Content-Type: application/x-www-form-urlencoded
 
 title=New Patch request. Patch the title only
 
 ###
 
-DELETE http://localhost:3000/articles/Postman%20article%20title%20post%20test
+DELETE http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
 
 ###

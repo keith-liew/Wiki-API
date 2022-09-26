@@ -17,7 +17,7 @@ Article.countDocuments().then(function(result){
     }
 }).catch(function(e){console.log(e.message)});
 
-app.route("/articles")
+app.route("/v1/articles")
     .get(function (req, res) {
         Article.find({})
             .then(function (results) { res.send(results) })
@@ -34,7 +34,7 @@ app.route("/articles")
         Article.deleteMany({}).then(res.send("Articles deleted")).catch(function (e) { res.send(e.message) });
     });
 
-app.route("/articles/:query")
+app.route("/v1/articles/:query")
     .get(function (req, res) {
         Article.findOne({ title: req.params.query })
             .then(function (results) {
