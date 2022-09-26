@@ -1,7 +1,6 @@
 # Wiki-API
-> A simple Express.js and MongoDB RESTful API
-
-<!-- Live demo [_here_](https://www.example.com).  If you have the project hosted somewhere, include the link here. -->
+> A simple Express.js and MongoDB RESTful API.
+>A live demo is on [render](https://wiki-api.onrender.com/) (free-tier plan).
 
 ## Table of Contents
 * [General Info](#general-information)
