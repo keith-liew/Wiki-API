@@ -26,6 +26,7 @@
 - body-parser: ^1.20.0
 - express: ^4.18.1
 - mongoose: ^6.6.1
+- dotenv: ^16.0.2
 
 
 ## Features
@@ -52,17 +53,12 @@
 
 
 ## Project Status
-Project is: _incomplete_
+Project is: _complete_
 
 
 ## Room for Improvement
 Room for improvement:
-- Modulize the models and routers
-- Return response with status code
-
-To do:
-- Continue development in order to further complete the API structure
-
+- Maybe implement some sort of security next time
 
 ## Acknowledgements
 - This project was inspired by Angela Yu.
