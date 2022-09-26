@@ -1,0 +1,50 @@
+
+// Wiki-API articles
+//get request
+GET http://localhost:3000/v1/articles
+
+###
+
+//post request
+POST http://localhost:3000/v1/articles
+// Content-Type: application/json
+// {
+//    title: "Postman article title post test",
+//    content: "Postman article content post for testing. Everything set and ready to go."
+//}
+Content-Type: application/x-www-form-urlencoded
+
+title=Postman article title post test
+&content=Postman article content post for testing. Everything set and ready to go.
+
+###
+
+//delete request
+DELETE http://localhost:3000/v1/articles
+
+###
+
+//Specific Wiki-API article
+//get request
+GET http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
+
+###
+
+//put request (replace)
+PUT http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
+Content-Type: application/x-www-form-urlencoded
+
+content=Replace a new docoment to the collection without title.
+
+###
+
+PATCH http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
+Content-Type: application/x-www-form-urlencoded
+
+title=New Patch request. Patch the title only
+
+###
+
+DELETE http://localhost:3000/v1/articles/Postman%20article%20title%20post%20test
+
+###
